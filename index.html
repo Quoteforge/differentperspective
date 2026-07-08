@@ -56,7 +56,8 @@
     display:flex; align-items:center; justify-content:space-between;
     padding:16px 32px;
   }
-  .nav-logo img{height:52px; width:auto;}
+  .nav-logo{display:flex; align-items:center; text-decoration:none;}
+  .nav-logo img{height:34px; width:auto;}
   .nav-links{display:flex; gap:32px; list-style:none; margin:0; padding:0;}
   .nav-links a{
     text-decoration:none; font-size:14.5px; font-weight:600; color:var(--ink); opacity:0.75;
@@ -255,13 +256,16 @@
     section{padding:64px 20px;}
     .hero{padding:60px 20px 20px;}
   }
+  @media(max-width:480px){
+    .nav-logo img{height:26px;}
+  }
   @media (prefers-reduced-motion: reduce){ *{transition:none !important;} }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="#" class="nav-logo"><img src="logo-icon.png" alt="Different Perspective"></a>
+  <a href="#" class="nav-logo"><img src="logo-horizontal.png" alt="Different Perspective"></a>
   <ul class="nav-links">
     <li><a href="#how">How it works</a></li>
     <li><a href="#included">What's included</a></li>
@@ -494,7 +498,7 @@
 
 <footer>
   <div>
-    <img src="logo-icon.png" alt="Different Perspective">
+    <img src="logo-horizontal.png" alt="Different Perspective">
     <div class="fmeta">360° virtual tours and sponsorship partnerships for golf courses and schools. Based in Polokwane, Limpopo.</div>
   </div>
   <div class="flinks">
